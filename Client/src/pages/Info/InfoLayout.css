@@ -1,0 +1,134 @@
+
+.infoLayoutSect {
+  display: flex;
+  justify-items: center;
+  min-height: 100vh;
+  @media (max-width: 800px) {
+    padding-inline: 2%;
+  }
+
+  .containerPpal {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoLayout {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size5);
+
+
+
+    .infoLayoutHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bold {
+      color: var(--aqua);
+      font-weight: bold;
+    }
+
+    img {
+      width: 70%;
+  
+      @media (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  
+    h3 {
+      margin-top: var(--size2);
+      margin-bottom: var(--size1);
+
+      @media (max-width: 400px) {
+        font-size: var(--textBody);
+      }
+    }
+
+    .subtitle {
+      width: 75%;
+      font-weight: bold;
+      font-size: 1.3rem;
+      max-width: 20rem;
+      color: var(--aqua);
+    }
+
+    .infoNav {
+      display: flex;
+      column-gap: var(--size5);
+      font-weight: bold;
+      font-size: var(--textM2);
+      flex-wrap: wrap;
+      margin-inline: auto;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+        row-gap: var(--size05);
+      }
+    
+      a {
+        font-size: var(--textM2);
+        
+        &:hover {
+          color: var(--magenta);
+        }
+      }
+    
+      .active {
+        color: var(--aqua);
+      }
+      
+      .inactive {
+        color: var(--purple);
+      }
+      
+      .click {
+        color: var(--mandarina);
+      }
+    }
+
+    .email {
+      color: var(--aqua);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* .infoContainer {
+      display: flex;
+      gap: var(--size2);
+    } */
+
+    .infoImg {
+      /* width: 20rem; */
+      /* height: 20rem; */
+      background-color: var(--purple);
+      /* border-radius: 100%; */
+      object-fit: cover;
+      width: 100%;
+      height: 20rem;
+      border-radius: 10px;
+    }
+
+    .infoContainer {
+      max-width: 60rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: var(--size3);
+      margin-inline: left;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size1);
+      }
+
+    }
+  }
+}
+

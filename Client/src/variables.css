@@ -1,0 +1,39 @@
+:root {
+  --white: rgb(245, 245, 245);
+  --white80: rgb(245, 245, 245, 0.80);
+  --black: rgb(20, 18, 24);
+  --black50: rgb(20, 18, 24, 0.50);
+  --purple: rgb(56, 0, 120);
+  --purple50: rgba(56, 0, 120, 0.50);
+  --purple20: rgba(56, 0, 120, 0.20);
+  --purple10: rgba(56, 0, 120, 0.10);
+  --nightPurple: rgb(38, 0, 82);
+  --aqua: rgb(0, 190, 212);
+  --magenta: rgb(230, 0, 96);
+  --mandarina: rgb(255, 162, 0);
+  --dori: rgb(11, 249, 185);
+
+  /* VIEW */
+  --headerSize: 2.5rem;
+  /* --mainSize: calc(100vh - 2.5rem - 11rem); */
+  --mainSize: 60vh;
+  --footerSize:11rem;
+  --widthPage: 1200px;
+
+    /* SIZES */
+    --size02: 0.2rem;
+    --size05: 0.5rem;
+    --size1: 1rem;
+    --size2: 2rem;
+    --size3: 3rem;
+    --size4: 4rem;
+    --size5: 5rem;
+
+    /* TEXT SIZES */
+    --textL1: 3rem;
+    --textL2: 2.5rem;
+    --textM1: 2rem;
+    --textM2: 1.5rem;
+    --textBody: 1rem;
+
+}

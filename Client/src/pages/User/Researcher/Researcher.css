@@ -1,0 +1,28 @@
+/* 
+.ProfileProjects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size2);
+  align-items: center;
+} */
+
+.projectsSection, .requestSection, .invitatiosSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size4);
+}
+
+.projectsGallery, .requestGallery, .invitationsGallery, .reviewSect {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size2);
+}
+
+.reviewGallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--size2);
+  row-gap: var(--size3);
+  justify-content: center;
+  align-items: center;
+}

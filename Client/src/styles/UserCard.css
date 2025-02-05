@@ -1,0 +1,76 @@
+
+
+.userCardWithButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size1);
+  }
+
+  button {
+    height: max-content;
+  }
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  gap: var(--size1);
+  flex-wrap: wrap;
+}
+
+.userCardData {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: var(--size05); */
+  p {
+    line-height: normal;
+  }
+
+  .tagsContainer {
+    margin-top: var(--size05);
+  }
+}
+
+.UserCardName {
+  font-weight: bold;
+}
+
+.userCardAvatar {
+  --AvatarSize: 6rem;
+
+  width: var(--AvatarSize);
+  height: var(--AvatarSize);
+  background-color: var(--purple);
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  color: var(--aqua);
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px var(--purple20);
+
+
+
+  img {
+    width: var(--AvatarSize);
+    height: var(--AvatarSize);
+  }
+}
+
+.creator {
+  color: var(--aqua);
+}
+
+.trashIcon {
+  height: var(--size2);
+  width: max-content;
+  margin-left: var(--size1);
+
+  &:hover {
+    filter: brightness(0);
+  }
+}

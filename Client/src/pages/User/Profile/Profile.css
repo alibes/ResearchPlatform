@@ -1,0 +1,53 @@
+/* 
+.ProfileProjects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size2);
+  align-items: center;
+} */
+
+.projectsSection, .requestSection, .invitatiosSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size4);
+
+  button {
+    margin-inline: auto;
+  }
+}
+
+.reviewButton {
+  margin-inline: auto;
+  text-align: center;
+  
+}
+
+.projectsGallery, .requestGallery, .invitationsGallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size2);
+}
+
+.delteAccountSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size1);
+
+  p {
+    text-align: center;
+    color: var(--magenta);
+    font-weight: bold;
+  }
+
+  .deleteAccountIcon {
+    height: var(--size2);
+    width: max-content;
+    margin-inline: auto;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.projectProfileCard{
+    
+  h4 {
+    cursor: pointer;
+    &:hover {
+      color: var(--magenta);
+    }
+  }
+
+    display: flex;
+    /* align-items: center; */
+    gap: var(--size1);
+
+   
+
+    .infoProfile {
+      gap: var(--size02);
+    }
+
+    /* .infoAllProjects {
+      gap: var(--size02);
+    } */
+  
+    .info {
+      display: flex;
+      flex-direction: column;
+  
+      .creator{
+        color: var(--magenta);
+        font-weight: bold;
+      }
+      .researcher{
+        color: var(--aqua);
+        font-weight: bold;
+      }
+    
+      .status {
+        width: max-content;
+        padding-inline: var(--size05);
+        padding-block: var(--size02);
+        border-radius: 20rem;
+        color: var(--white);
+      }
+
+      .paused {
+        background-color: var(--mandarina);
+      }
+      .active {
+        background-color: var(--aqua);
+      }
+      .closed {
+        background-color: var(--magenta);
+      }
+    
+      .description {
+        width: 100%;
+      }
+    }
+
+}
+
+.profileProjectImg{
+  --imgSize: 6rem;
+
+  object-fit: cover;
+  border-radius: 100%;
+  width: var(--imgSize);
+  height: var(--imgSize);
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.03);
+  }
+}

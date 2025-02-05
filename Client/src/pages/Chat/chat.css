@@ -1,0 +1,231 @@
+
+
+.chatSection {
+  --containersSize: 20rem;
+  --containerSizeSmall: 100%;
+  --radioCont: 10px;
+  --heigh: 70vh;
+
+  display: flex;
+  gap: var(--size1);
+  justify-content: center;
+
+  @media (max-width: 700px){
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  ::-webkit-scrollbar {
+    width: var(--size05);
+    background-color: white;
+    background: linear-gradient(0deg, var(--purple50) 10%, var(--purple20) 90%);
+    /* background: transparent; */
+    /* background: var(--purple20); */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--mandarina);
+  }
+}
+
+.seeUsersChatButton {
+  width: var(--containersSize);
+  background-color: var(--purple);
+  margin-bottom: var(--size05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size1);
+  height: var(--size3);
+
+  img {
+    height: 1.5rem;
+  }
+
+  &:hover {
+    color: var(--black);
+    img {
+      filter: brightness(0);
+    }
+  }
+}
+
+.usersListContainer {
+  width: var(--containersSize);
+  max-height: 100%;
+  /* border: 3px solid purple; */
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size05);
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: var(--radioCont);
+  padding-block: var(--size05);
+  padding-inline: var(--size1);
+  width: var(--containersSize);
+  height: calc(100% - var(--size3) - var(--size05));
+  z-index: 10;
+  
+  @media (max-width: 700px){
+    position: absolute;
+    height: calc(var(--heigh) - var(--size3));
+  }
+  
+  .separatorChat {
+    border-bottom: 2px solid var(--aqua);
+    margin-top: var(--size05);
+  }
+
+  .user-item {
+    padding: var(--size02);
+    border-radius: var(--radioCont);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+    p {
+      line-height: 1;
+    }
+  
+    img {
+      --avatarSize: 3rem;
+      width: var(--avatarSize);
+      height: var(--avatarSize);
+      object-fit: cover;
+      border-radius: 100%;
+      margin-right: var(--size05);
+    }
+
+    &:hover {
+      background-color: var(--aqua);
+    }
+  }
+  
+}
+.active-user {
+  background-color: var(--aqua);
+  /* img {
+    border: 2px solid var(--aqua);
+  } */
+}
+
+.other {
+  background-color: var(--magenta);
+}
+
+
+
+.chat-box-container {
+  display: flex;
+  align-items: flex-end;
+  width: var(--containersSize); 
+  height: var(--heigh);
+  padding: var(--size1);
+  background-color: white;
+  border-radius: var(--radioCont);
+  overflow-y: auto;
+  box-shadow: 0 0 15px 1px var(--purple10);
+
+  .messages {
+    max-height: var(--heigh);
+    flex-grow: 1; 
+    overflow-y: auto;
+    margin-bottom: 10px; 
+    border-radius: var(--radioCont);
+    padding: var(--size05);
+    position: relative;
+  }
+}
+
+.message-content {
+  position: relative;
+  color: white;
+  padding: 5px 10px;
+  margin-top: var(--size1);
+  max-width: 90%; 
+  width: fit-content; 
+
+  &:hover {
+    .delete-btn {
+      visibility: visible;
+    }
+  
+    .deleteMsgIcon {
+      visibility: visible;
+    }
+  } 
+}
+
+
+.deleteMsgIcon {
+  --iconSize: 1rem;
+
+  height: var(--iconSize);
+  width: var(--iconSize);
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  visibility: hidden; 
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0);
+  }
+}
+
+.message-owner {
+  background-color: var(--mandarina);
+  margin-left: auto; 
+  text-align: right;
+  border-radius: 20px 20px 0 20px;
+}
+
+.message-other {
+  border-radius: 20px 20px 20px 0;
+  background-color: var(--aqua);
+}
+
+.input-container {
+  display: flex; 
+  width: 100%;
+
+  .message-input {
+    flex-grow: 1; 
+    padding: var(--size1);
+    margin-right: var(--size05); 
+    border-radius: 5px;
+    border: none;
+  
+    padding-inline: var(--size05);
+    padding-block: var(--size05);
+    background-color: var(--purple);
+    color: var(--white);
+  
+    &::placeholder {
+      color: var(--white80);
+    }
+    
+    &:hover {
+      
+      &::placeholder {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+
+
+
+
+

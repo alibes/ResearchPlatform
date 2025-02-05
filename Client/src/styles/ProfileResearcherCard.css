@@ -1,0 +1,55 @@
+
+.profileUserCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size2);
+  flex-wrap: wrap;
+  /* max-width: 50rem; */
+  margin-inline: auto;
+  /* padding-block: 6.5rem; */
+
+  .profileUserHeader {
+    display: flex;
+    gap: var(--size2);
+    flex-wrap: wrap;
+
+    .userName {
+      display: flex;
+      gap: var(--size1);
+    }
+
+    .profileAvatar {
+      --AvatarSize: 20rem;
+      
+      background-color: var(--purple);
+      width: var(--AvatarSize);
+      height: var(--AvatarSize);
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 0 0 15px 1px var(--purple10);
+
+
+      img {
+        height: var(--AvatarSize);
+        background-color: transparent;
+      }
+    }
+
+    .userCardHeadData {
+      display: flex;
+      flex-direction: column;
+      gap: var(--size1);
+
+      h4 {
+        margin-top: var(--size1);
+      }
+    }
+  }
+  
+  .profileDescription {
+    /* width: 53rem; */
+    display: flex;
+    flex-direction: column;
+  }
+}
