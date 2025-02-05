@@ -8,6 +8,17 @@
 
 - [React]
 - [Node.js]
+- [CSS]
+- [Express]
+- [Zod]
+- [jsonwebtoken]
+- [bcrypt]
+- [cors]
+- [dotenv]
+- [multer]
+- [mysql2]
+- [nodemailer]
+- [nodemon]
 
 ### Installation
 1. Clone the repo
